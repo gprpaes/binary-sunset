@@ -19,15 +19,15 @@
 
 .sun1{
    position:absolute;
-   width: 70px;
-   height: 70px;
+   width: 45px;
+   height: 45px;
    border-radius:50%;
    top:8%;
-   left:30%;
+   left:60%;
    background: linear-gradient(45deg, #d8b64f, #e0c36a);
    box-shadow: 1px 1px 10px 0 #ecd56e;
    animation: sun1;
-   animation-duration: 30s;
+   animation-duration: 32s;
    animation-timing-function: linear;
    animation-fill-mode: forwards;
    
@@ -38,11 +38,11 @@
 
 .sun2{
     position:absolute;
-    width: 95px;
-    height: 95px;
+    width: 60px;
+    height: 60px;
     border-radius:50%;
     top: 30%;
-    left:45.3%;
+    left:70%;
     background: linear-gradient(45deg, #ce503a, #b32209);
     box-shadow: 1px 1px 20px 0 #b12b02;
     animation-name: sun2;
@@ -54,21 +54,48 @@
  }
 
  @keyframes sun1{
+    20%{
+       top:18%;
+    }    
+
+    40%{
+       top:28%;
+    }   
+
+    60%{
+       top:38%;
+    }   
+
+    80%{
+       top:48%;
+    }   
+
+    100%{
+       top: 58%;     
+    }   
 
  }
 
  @keyframes sun2{
-  
-    50%{
+    20%{
+        top:40%;
+    }
+
+    40%{
         top: 50%;
-        left: 70.75%;
+    }
+
+    60%{
+        top: 60%;
+    }
+
+    80%{
+        top: 70%;
     }
 
     100%{
-        top:60%;
-        left: 80%;
+        top: 80%;
     }
-
 }
 
  @keyframes nightime{
